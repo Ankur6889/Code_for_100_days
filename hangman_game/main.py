@@ -2,6 +2,7 @@ import random
 import ascii_art
 import game_words
 import os 
+import numpy
 def display_function(dashed_word,lives,message):
     
     os.system('clear')
