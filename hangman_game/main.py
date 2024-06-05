@@ -3,6 +3,7 @@ import ascii_art
 import game_words
 import os 
 def display_function(dashed_word,lives,message):
+    
     os.system('clear')
     print("\n",ascii_art.logo,"\n","_____________________________________________________________________","\n")
     how_to_print =""
@@ -26,14 +27,12 @@ game_end = False
 already_guessed_letters = []
 dashed_word = []
 message = "Guess a letter :"
+global_game_restart = False 
 
 # generating an array called display_word with dashed letters for the word 
 
 for i in range(len_of_word):
     dashed_word.append("_")
-
-
-
 
 
 while not game_end:
