@@ -48,7 +48,14 @@ while not game_end:
             for letter_index in range(len_of_word):
                 if guessed_letter == selected_word[letter_index]:
                     dashed_word[letter_index] = guessed_letter
-                    message = "Good , now guess another letter :"
+                    guessed_word = ""
+                    for i in dashed_word:
+                        guessed_word = guessed_word + i
+                    if guessed_word == selected_word :
+                        message = "Great Job !! you guessed the correct word."
+                    else : 
+                        message = "Good , now guess another letter :"
+            
             
         else : 
             print("That's Wrong")
